@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Sumbit from "Compo"
+
 
 import React, {Component} from 'react';
-import "./Styles/style.css/"
+// import "./Styles/style.css/"
 import Header from "../src/Components/header";
 import Todos from "../src/Components/todos";
-
+import Sumbit from "../src/Components/submit";
 
 class App extends Component{
   //we are going to be passing states through app.js
@@ -19,14 +19,39 @@ class App extends Component{
     //will map through this array so it will display on out page
     //will change over time as we run through and add/take awy from it
   };
+
+
+
+//delete button, removing element from task array
+handleDelete = (index) => {
+  const newArr = [...this.state.tasks]
+  newArr.splice(index, 1,)
+   //as we delete it is going through the task array//
+  //moving the next idem up by one when we delete
+  this.setState({tasks: newArr});
+  //everytime we delete, it splices the array, moves the next up,
+  //state of our component every time we lose a number
+}
+//move up anything in tasks 
+
+
+//functions must be above render
   render(){
     return(
       //class app components require a render and return
 <div className = "wrapper">
   <div className = "card-frame">
-    <Header numToDos = {this.state.tasks.length}/>
-  {/* //"this" refers to numToDos, same line */}  
 
+    <Header numToDos = {this.state.tasks.length}/>
+    {/* //goign to give us a list of our tasks */}
+  {/* //"this" refers to numToDos, same line */} 
+
+
+    <Todos tasks = {this.state.tasks} 
+   //call the ondelete button
+    onDelete = {this.handleDelete} />
+  {/* //handleDelete is one of our functions
+  //will remove a task -removes item from the state */}
 
 
 
@@ -45,12 +70,6 @@ class App extends Component{
 <Header/>
 
 
-function App() {
-  return (
-    <div className="">
 
-    </div>
-  );
-}
 
 export default App;
