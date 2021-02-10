@@ -2,6 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 import '/Styles/style.css'
 
+
+
+
+//ctrl space
+//press enter after typing
+
+
+
+
+
+
+
+
+
+
+
 function App() {
   return (
     <div className="App">
