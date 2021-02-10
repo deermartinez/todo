@@ -19,9 +19,13 @@
 
 import React from 'react'
 
-function header() {
+function header(props) {
+    //props brings live component
     return (
-        <div>
+        <div className = "class-header">
+            {/* //so we can call it later in css */}
+            <h1 className = "class-header-title">Your {props.numToDo }Tasks to Complete</h1>
+
             
         </div>
     )
