@@ -16,7 +16,7 @@ const ToDoList = (props) => {
         //index as a parameter to catch those keys
         //.map withouth key will warn us in react app as an "unkept content"
 
-    return <todo content = {todo} key = {index} id = {index} />
+    return <todo content = {todo} key = {index} id = {index} onDelete={props.onDeete}/>
     //access to all todos to take tasks as prop
 })
     return (
@@ -36,7 +36,7 @@ const Todo = (props) => {
             {props.content}
         {/* //content is list above tha  */}
         {/* //When you press enter, this will dispaly */}
-        <button class="delete" onClick={()=> {props.onDelete(props.id)}}> X</button>
+        <button class="delete" onClick={()=> {props.onDelete(props.id)}}> X </button>
         {/* //targeting the button by its props id, delete when clicked
         //anything from the array-from that .map
         //fat arror => because it is a function */}

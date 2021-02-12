@@ -20,13 +20,18 @@
 import React from 'react'
 
 function header(props) {
-    //props brings live component
+    // const name = "Des"
+    // //props brings live component
+    // const date = new Date();
+    // const hours = date.getHours();
+    // const minutes = date.getminutes();
+
     return (
         <div className = "class-header">
             {/* //so we can call it later in css */}
             <h1 className = "class-header-title">Your {props.numToDo }Tasks to Complete</h1>
-
-            
+            {/* <h2>Hello {name}. It is currently {hours} : {minutes}</h2>
+             */}
         </div>
     )
 }
