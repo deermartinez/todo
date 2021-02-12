@@ -20,6 +20,12 @@ class App extends Component{
     //will change over time as we run through and add/take awy from it
   };
 
+  handleSubmit = task => {
+    this.setState({tasks: [...this.state.tasks, taskk]});
+  }
+  //this function copies contents of the old task array 
+  //adds new tasks
+
 
 
 //delete button, removing element from task array
@@ -53,6 +59,8 @@ handleDelete = (index) => {
   {/* //handleDelete is one of our functions
   //will remove a task -removes item from the state */}
 
+
+    <Submit onFormSubmit = {this.handleSubmit} />
 
 
   </div>

@@ -11,10 +11,17 @@ class SubmitForm extends Component{
 
     handleSubmit = (e) => {
         e.preventDefault();
+          // e prevent default prevents page tfrom automatically refreshing when submitted
         if(this.state.term === '') return;
+      
         this.props.onFormSubmit(this.state.term);
         this.setState({term: ''});
+        //term means text that is going to put in input field
+        //adding on-changed handler will update this everytime text is added
     }
+    //handlesubmit prevents default
+    //anytime we render something to page
+    //renders through react, not browser
 
     render(){
         return(
@@ -23,8 +30,9 @@ class SubmitForm extends Component{
                 <input
                 type = 'text'
                 className = 'input'
-                placeholder = 'Enter Task'
+                placeholder = 'Enter Item'
                 value = {this.state.term}
+                //changes are rendered through react, not the browser
                 onChange = {(e) => this.setState({term: e.target.value})}
                 />
             </form>
