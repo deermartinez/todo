@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import "./Styles/style.css"
 import Header from "../src/Components/header";
-import Todos from "../src/Components/todos";
+import Todo from "../src/Components/todos";
 import Submit from "../src/Components/submit";
 
 class App extends Component{
@@ -26,8 +26,8 @@ class App extends Component{
 
 //delete button, removing element from task array
 handleDelete = (index) => {
-  const newArr = [...this.state.tasks]
-  newArr.splice(index, 1,)
+  const newArr = [...this.state.tasks];
+  newArr.splice(index, 1,);
    //as we delete it is going through the task array//
   //moving the next idem up by one when we delete
   this.setState({tasks: newArr});
@@ -41,15 +41,15 @@ handleDelete = (index) => {
   render(){
     return(
       //class app components require a render and return
-<div className = "wrapper">
-  <div className = "card-frame">
+<div className = 'wrapper'>
+  <div className = 'card-frame'>
 
     <Header numToDos = {this.state.tasks.length}/>
     {/* //goign to give us a list of our tasks */}
   {/* //"this" refers to numToDos, same line */} 
 
 
-    <Todos tasks = {this.state.tasks} 
+    <Todo tasks = {this.state.tasks} 
    //call the ondelete button
     onDelete = {this.handleDelete} />
   {/* //handleDelete is one of our functions
@@ -72,7 +72,7 @@ handleDelete = (index) => {
 
 //ctrl space
 //press enter after typing
-<Header/>
+
 
 
 

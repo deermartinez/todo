@@ -35,6 +35,7 @@ class SubmitForm extends Component{
                 //changes are rendered through react, not the browser
                 onChange = {(e) => this.setState({term: e.target.value})}
                 />
+                <button className = 'button'>Submit</button>
             </form>
         )
     }

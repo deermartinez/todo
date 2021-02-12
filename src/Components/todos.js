@@ -2,7 +2,7 @@ import React from 'react'
 
 const ToDoList = (props) => {
     //props is getting info from other pages
-    const todos = props.tasks.map((todo, index)=> {
+    const todos = props.tasks.map((todos, index)=> {
     //have acces to all the todos we will pass
     //we will pass tasks as a prop= const todo
 
@@ -16,7 +16,7 @@ const ToDoList = (props) => {
         //index as a parameter to catch those keys
         //.map withouth key will warn us in react app as an "unkept content"
 
-    return <todo content = {todo} key = {index} id = {index} onDelete={props.onDeete}/>
+    return <Todo content = {todos} key = {index} id = {index} onDelete={props.onDelete}/>
     //access to all todos to take tasks as prop
 })
     return (
@@ -28,7 +28,7 @@ const ToDoList = (props) => {
     )
 }
 
-const todo = (props) => {
+const Todo = (props) => {
     //displays content of the task string
     //fat arrow, don't have to do return immediately after
     return(
@@ -36,7 +36,7 @@ const todo = (props) => {
             {props.content}
         {/* //content is list above tha  */}
         {/* //When you press enter, this will dispaly */}
-        <button class="delete" onClick={()=> {props.onDelete(props.id)}}> X </button>
+        <button class='delete' onClick={()=> {props.onDelete(props.id)}}> X </button>
         {/* //targeting the button by its props id, delete when clicked
         //anything from the array-from that .map
         //fat arror => because it is a function */}
