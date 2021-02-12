@@ -41,7 +41,7 @@ handleDelete = (index) => {
   render(){
     return(
       //class app components require a render and return
-<div className = 'wrapper'>
+<div  style = {{borderColor: "red"}} className = 'wrapper'>
   <div className = 'card-frame'>
 
     <Header numToDos = {this.state.tasks.length}/>

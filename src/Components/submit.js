@@ -25,7 +25,7 @@ class SubmitForm extends Component{
 
     render(){
         return(
-            <form onSubmit = {this.handleSubmit}>
+            <form style = {{backgroundColor: "black"}} onSubmit = {this.handleSubmit} >
                 {/* //form holding out tasks */}
                 <input
                 type = 'text'
