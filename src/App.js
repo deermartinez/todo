@@ -1,12 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-
-
 import React, {Component} from 'react';
-// import "./Styles/style.css/"
+import "./Styles/style.css"
 import Header from "../src/Components/header";
 import Todos from "../src/Components/todos";
-import Sumbit from "../src/Components/submit";
+import Submit from "../src/Components/submit";
 
 class App extends Component{
   //we are going to be passing states through app.js
@@ -21,7 +17,7 @@ class App extends Component{
   };
 
   handleSubmit = task => {
-    this.setState({tasks: [...this.state.tasks, taskk]});
+    this.setState({tasks: [...this.state.tasks, task]});
   }
   //this function copies contents of the old task array 
   //adds new tasks
@@ -61,6 +57,7 @@ handleDelete = (index) => {
 
 
     <Submit onFormSubmit = {this.handleSubmit} />
+    {/* //submit box */}
 
 
   </div>

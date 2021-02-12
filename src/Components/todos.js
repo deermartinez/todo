@@ -20,7 +20,7 @@ const ToDoList = (props) => {
     //access to all todos to take tasks as prop
 })
     return (
-        <div className = "list-wrapper">
+        <div className = 'list-wrapper'>
             {todos}
             {/* //map function needs to include a unique key to use as a parameter
             //include id and key */}
@@ -28,11 +28,11 @@ const ToDoList = (props) => {
     )
 }
 
-const Todo = (props) => {
+const todo = (props) => {
     //displays content of the task string
     //fat arrow, don't have to do return immediately after
     return(
-        <div className = "list-item">
+        <div className = 'list-item'>
             {props.content}
         {/* //content is list above tha  */}
         {/* //When you press enter, this will dispaly */}
