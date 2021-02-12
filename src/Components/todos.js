@@ -32,7 +32,7 @@ const Todo = (props) => {
     //displays content of the task string
     //fat arrow, don't have to do return immediately after
     return(
-        <div  style = {{backgroundColor: "silver"}}className = 'list-item'>
+        <div className = 'list-item'>
             {props.content}
         {/* //content is list above tha  */}
         {/* //When you press enter, this will dispaly */}

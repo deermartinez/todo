@@ -1,0 +1,32 @@
+/* const Todo = (props) => {
+    //displays content of the task string
+    //fat arrow, don't have to do return immediately after
+    return(
+        <div  style = {{}}className = 'list-item'>
+            {props.content}
+
+// */
+.list-item{
+    background-color: "silver"
+
+}
+
+/* //for final find and incorporate widgets into page */
+
+/* 
+            render(){
+                return(
+                    <form style = {{}} onSubmit = {this.handleSubmit} > */
+
+form{
+    background-color: "black"
+}
+/* 
+                    render(){
+                        return(
+                          //class app components require a render and return
+                    <div  style = {{borderColor: "red"}} className = 'wrapper'>
+                      <div className = 'card-frame'> */
+
+
+

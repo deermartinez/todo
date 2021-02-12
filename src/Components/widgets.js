@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Styles/styles.css"
+
 
 function widgets() {
     const time = new Date();

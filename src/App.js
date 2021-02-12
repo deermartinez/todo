@@ -3,6 +3,7 @@ import "./Styles/style.css"
 import Header from "../src/Components/header";
 import Todo from "../src/Components/todos";
 import Submit from "../src/Components/submit";
+import Widgets from "../src/Components/widgets";
 
 class App extends Component{
   //we are going to be passing states through app.js
@@ -41,8 +42,10 @@ handleDelete = (index) => {
   render(){
     return(
       //class app components require a render and return
-<div  style = {{borderColor: "red"}} className = 'wrapper'>
+<div className = 'wrapper'>
   <div className = 'card-frame'>
+
+    <Widgets></Widgets>
 
     <Header numToDos = {this.state.tasks.length}/>
     {/* //goign to give us a list of our tasks */}
