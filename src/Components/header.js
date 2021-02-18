@@ -19,6 +19,7 @@
 
 import React from 'react'
 import Todos from 'react'
+import '../Styles/header.css'
 
 function Header(props) {
     // const name = "Des"
@@ -30,7 +31,7 @@ function Header(props) {
     return (
         <div className = 'card-header'>
             {/* //so we can call it later in css */}
-            <h1 className = 'card-header-title header' >Your {props.numToDo }Tasks to Complete</h1>
+            <h1 className = 'card-header-title header' >Your {props.numToDo }Assignments Today</h1>
             {/* <h2>Hello {name}. It is currently {hours} : {minutes}</h2>
              */}
         </div>

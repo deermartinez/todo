@@ -44,3 +44,15 @@ form {
   max-height: 200px;
   overflow-y: auto;
 }
+
+
+
+body {
+  margin: 0;
+  background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/daisy-flower-1532449822.jpg?crop=0.752xw:1.00xh;0.125xw,0&resize=640:*');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:black;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styles/todos.css'
 
 const ToDoList = (props) => {
     //props is getting info from other pages

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styles/widgets.css'
 
 
 function widgets() {
@@ -8,16 +9,29 @@ function widgets() {
 
     return (
 
-        <div>
-            <iframe src = "http://localhost:3000"></iframe>
-            <div className = "time">{hours} : {minutes} </div>
+        // <div>
+        //     {/* <iframe src = "http://localhost:3000"></iframe> */}
+        //     <div className = "time">{hours} : {minutes} </div>
+        //     <div className = "links">
+        //         <a href = "/">Click Me</a>
+        //         <a href = "/">Test me</a>
+        //     </div>
+        //     <input type="Login"></input>
+            
+        // </div>
+
+
+         <div classname = "widgets">
+            <iframe width="320" height="440" src="http://instagram.com/embed" ></iframe>
             <div className = "links">
-                <a href = "/">Click Me</a>
-                <a href = "/">Test me</a>
+                <a href = "https://www.instagram.com/">Login</a>
+                <a href = "https://www.instagram.com/">Follow me</a>
             </div>
-            <input type="search"></input>
+            
             
         </div>
+
+        
     )
 }
 
