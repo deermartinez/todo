@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/%7Btodo%7D/static/css/main.8fd48ac9.chunk.css",
+    "main.js": "/%7Btodo%7D/static/js/main.fe01290d.chunk.js",
+    "main.js.map": "/%7Btodo%7D/static/js/main.fe01290d.chunk.js.map",
+    "runtime-main.js": "/%7Btodo%7D/static/js/runtime-main.ea4f55f2.js",
+    "runtime-main.js.map": "/%7Btodo%7D/static/js/runtime-main.ea4f55f2.js.map",
+    "static/js/2.dd18112c.chunk.js": "/%7Btodo%7D/static/js/2.dd18112c.chunk.js",
+    "static/js/2.dd18112c.chunk.js.map": "/%7Btodo%7D/static/js/2.dd18112c.chunk.js.map",
+    "static/js/3.ebd061d6.chunk.js": "/%7Btodo%7D/static/js/3.ebd061d6.chunk.js",
+    "static/js/3.ebd061d6.chunk.js.map": "/%7Btodo%7D/static/js/3.ebd061d6.chunk.js.map",
+    "index.html": "/%7Btodo%7D/index.html",
+    "static/css/main.8fd48ac9.chunk.css.map": "/%7Btodo%7D/static/css/main.8fd48ac9.chunk.css.map",
+    "static/js/2.dd18112c.chunk.js.LICENSE.txt": "/%7Btodo%7D/static/js/2.dd18112c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/%7Btodo%7D/static/media/flower.1540e4ee.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea4f55f2.js",
+    "static/js/2.dd18112c.chunk.js",
+    "static/css/main.8fd48ac9.chunk.css",
+    "static/js/main.fe01290d.chunk.js"
+  ]
+}
